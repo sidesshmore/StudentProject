@@ -7,10 +7,11 @@ class StudentAdmin(admin.ModelAdmin):
     list_display=('name','roll_no','stream','fees_paid')
     list_editable=('fees_paid',)
     search_fields=('name','roll_no')
-    list_filter=('stream',)
+    list_filter=('stream','fees_paid')
 
 
 
 
 
 admin.site.register(StudentModel, StudentAdmin)
+# 
